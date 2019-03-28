@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Starting the buil'
+        build 'BuildAndSaveToJFrog'
       }
     }
     stage('Run SQL in SMK') {
@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy to SMK') {
       steps {
-        echo 'Deploying to SMK'
+        build '	DeployBuildToTomcat-Dev'
       }
     }
     stage('Restart SMK Apps') {
