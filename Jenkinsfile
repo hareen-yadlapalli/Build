@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy to SMK') {
       steps {
-        build '	DeployBuildToTomcat-Dev'
+        build 'DeployBuildToTomcat-Dev'
       }
     }
     stage('Restart SMK Apps') {
