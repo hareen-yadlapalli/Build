@@ -21,5 +21,10 @@ pipeline {
         echo 'Restarting SMK Apps'
       }
     }
+    stage('Run Tests') {
+      steps {
+        echo 'Running Unit Testing'
+      }
+    }
   }
 }
