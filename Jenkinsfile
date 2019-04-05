@@ -11,7 +11,7 @@ pipeline {
         echo "First Step ${params.DBServerName}"
       }
     }
-    stage('') {
+    stage('Interactive Input') {
       steps {
         input '"Enter parameters"'
       }
