@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('First Stage') {
       steps {
-        echo 'First Step'
+        echo "First Step ${params.DBServerName}" 
       }
     }
   }
