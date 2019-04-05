@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Execute Scripts') {
       steps {
-            build job: 'ExecuteScripts', parameters: [[$class: 'StringParameterValue', name: 'DBServerName', value: ${params.DBServerName}]]
+            build job: 'ExecuteScripts',
       }
     }
     stage('Stage') {
