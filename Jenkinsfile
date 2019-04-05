@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Second Stage') {
       steps {
-        echo '"First Step ${params.DBServerName}"'
+        echo '"First Step ${params.BuildNum}"'
       }
     }
     stage('Stage') {
       steps {
-        echo '"First Step ${params.DBServerName}"'
+        echo '"First Step ${params.BuildNum}"'
       }
     }
   }
