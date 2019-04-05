@@ -14,6 +14,7 @@ pipeline {
     stage('Interactive Input') {
       steps {
         input '"Enter parameters"'
+        bat 'testScript'
       }
     }
   }
