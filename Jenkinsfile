@@ -6,6 +6,11 @@ pipeline {
         echo '"First Step ${params.DBServerName}"'
       }
     }
+    stage('Stage') {
+      steps {
+        echo '"First Step ${params.DBServerName}"'
+      }
+    }
   }
   environment {
     DBServerName = 'hello'
