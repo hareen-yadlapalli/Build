@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build 'BuildAndSaveToJFrog'
+        build 'ExecuteScripts'
       }
     }
     stage('Run SQL in SMK') {
