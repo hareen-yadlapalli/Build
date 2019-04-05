@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Second Stage') {
       steps {
-        echo '"Second Step ${params.DBUserName}"'
+        echo '"First Step ${params.DBServerName}"'
       }
     }
   }
