@@ -11,7 +11,7 @@ pipeline {
     DBServerName = 'hello'
   }
   parameters {
-    string(name: 'BuildNum', defaultValue: 'BuildNum', description: 'Build Number Eg Release-153)
+    string(name: 'BuildNum', defaultValue: 'BuildNum', description: 'Build Number Eg Release-153')
     booleanParam(name: 'CanRestartServer', defaultValue: 'false', description: 'Restart Required')
     string(name: 'DBServerName', defaultValue: 'DBServerName', description: 'Database Server Name Eg desktop-icvg5t9')
     string(name: 'DBUserName', defaultValue: 'DBUserName', description: 'Database User Name Eg demouser')
