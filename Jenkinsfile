@@ -11,6 +11,11 @@ pipeline {
         echo "First Step ${params.DBServerName}"
       }
     }
+    stage('') {
+      steps {
+        input '"Enter parameters"'
+      }
+    }
   }
   environment {
     DBServerName = 'hello'
