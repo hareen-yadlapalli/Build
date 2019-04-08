@@ -18,6 +18,9 @@ pipeline {
         steps {
           echo '"First Step ${params.DBServerName}"'
           build 'PegaUnitTests'
+          build(job: 'PegaUnitTests', parameters: [
+                                            [$class: 'StringParameterValue', name: 'RBScriptsLoc', value: "${params.RBScriptsLoc}"]
+                                            ])
         }
       }
       stage('Interactive Input') {
