@@ -4,14 +4,14 @@ pipeline {
     stage('Execute Scripts') {
       steps {
         build(job: 'ExecuteScripts', parameters: [
-                                  [$class: 'StringParameterValue', name: 'DBServerName', value: "${params.DBServerName}"], 
-                                  [$class: 'StringParameterValue', name: 'DBUserName', value: "${params.DBUserName}"],
-                                  [$class: 'StringParameterValue', name: 'DBUserPwd', value: "${params.DBUserPwd}"],
-                                  [$class: 'StringParameterValue', name: 'ImplScriptsLoc', value: "${params.ImplScriptsLoc}"],
-                                  [$class: 'StringParameterValue', name: 'ImplScripts', value: "${params.ImplScripts}"],
-                                  [$class: 'StringParameterValue', name: 'RBScriptsLoc', value: "${params.RBScriptsLoc}"],
-                                  [$class: 'StringParameterValue', name: 'RBScripts', value: "${params.RBScripts}"]
-                                 ])
+                                            [$class: 'StringParameterValue', name: 'DBServerName', value: "${params.DBServerName}"], 
+                                            [$class: 'StringParameterValue', name: 'DBUserName', value: "${params.DBUserName}"],
+                                            [$class: 'StringParameterValue', name: 'DBUserPwd', value: "${params.DBUserPwd}"],
+                                            [$class: 'StringParameterValue', name: 'ImplScriptsLoc', value: "${params.ImplScriptsLoc}"],
+                                            [$class: 'StringParameterValue', name: 'ImplScripts', value: "${params.ImplScripts}"],
+                                            [$class: 'StringParameterValue', name: 'RBScriptsLoc', value: "${params.RBScriptsLoc}"],
+                                            [$class: 'StringParameterValue', name: 'RBScripts', value: "${params.RBScripts}"]
+                                           ])
         }
       }
       stage('Stage') {
